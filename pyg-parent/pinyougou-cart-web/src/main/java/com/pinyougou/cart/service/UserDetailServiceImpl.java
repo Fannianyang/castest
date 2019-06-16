@@ -16,7 +16,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
         System.out.println("经过认证类1："+username);
         //构建角色集合
         List<GrantedAuthority> authorities=new ArrayList();
-        authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
+        authorities.add(new SimpleGrantedAuthority("ROLE_USER2"));
         return new User(username, ""  , authorities);
 
     }
